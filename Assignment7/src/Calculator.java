@@ -11,6 +11,10 @@ import javax.swing.JTextField;
 // Implement a calculator and it's add, minus, multiply and divide operations.//
 public class Calculator extends JFrame implements ActionListener {
 	
+	// 1. Can not correctly handle divide by 0.
+	// 2. When initialized the calculator, if you first press operation not digits, it will throw
+	// unfriendly runtime exception, that is not what we want. You should wrap these exceptions and
+	// give users some friendly alerts.
 	private class WindowCloser extends WindowAdapter{
     }
 	//Create the numbers on the button
